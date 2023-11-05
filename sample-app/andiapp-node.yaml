@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app-node
-        image: andikapri/nodejs:480
+        image: andikapri/nodejs:6761760104
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
