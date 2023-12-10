@@ -1,0 +1,15 @@
+name: Pipeline-Dev
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build_image_dev:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2 
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
